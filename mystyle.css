@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+
+}
+
+body {
+    background-image: url("https://i.ibb.co/cw6BWf6/Background.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.drum-kit-container {
+    position: relative;
+    width: 600px;
+    margin: -100px auto 0;
+}
+
+.drum-kit {
+    margin-top: 46%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#Right-stick {
+    margin-top: -31%;
+    
+
+}
+
+#Left-stick {
+    height: 40%;
+    width: 40%;
+}
+
+.leftStick {
+    position: absolute;
+    top: 165px;
+    left: 27px;
+    transform: rotate(-7.2deg) scale(1.5);
+    transition: all ease-in-out .042s;
+}
+
+.rightStick {
+    position: absolute;
+    top: 166px;
+    right: -34%;
+    transform: scale(0.6);
+    z-index: 0;
+    transition: all ease-in-out .042s;
+}
+
+.key {
+    display: inline-block;
+    transition: all ease-in-out .042s;
+    position: absolute;
+    background: #9a744a;
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 4px rgb(0 0 0);
+    z-index: 2;
+    margin-top: 66px;
+}
+
+
+.key.b {
+    top: 504px;
+    right: 211px;
+}
+
+.key.v {
+    top: 504px;
+    right: 283px;
+}
+
+.key.j{
+    right: 142px;
+    top: 423px;
+}
+
+.key.h {
+    right: 197px;
+    top: 346px;
+}
+
+.key.g {
+    left: 240px;
+    top: 340px;
+}
+
+.key.f {
+    top: 428px;
+    left: 184px;
+}
+
+.key.e {
+    top: 219px;
+    left: 77px;
+}
+
+.key.d {
+    left: 218px;
+    top: 275px;
+}
+
+.key.i{
+    right: 202px;
+    top: 273px;
+}
+
+.key.k {
+    right: 57px;
+    top: 221px;
+}
+
+.playing {
+    transform: scale(1.12);
+}
+
+.key-code {
+    color: #444;
+    background-color: #eaeaea;
+    font-size: 1.25em;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 3px solid #aaa;
+}
+
+.key-sound {
+    font-size: 1.2em;
+    margin-left: 10px;
+    font-family: 'Handlee', cursive;
+    vertical-align: middle;
+}
